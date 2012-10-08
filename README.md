@@ -1,4 +1,4 @@
-statica_lesginestes
-===================
+Website "Les Ginestes"
+======================
 
-Les Ginestes website for statica
+This is a real website that use statica for html rendering. 
