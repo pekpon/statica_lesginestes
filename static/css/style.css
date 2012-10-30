@@ -5,6 +5,15 @@ body {
 
 .hero-unit {
   background: #eee url('../../static/img/background.jpg'); 
+	background-size:100%;
+	padding:20px !important;
+	display:table;
+	width:100%;
+}
+
+.hero-unit img{
+  float:left;
+	margin-right:30px;
 }
 
 .table td {
@@ -19,10 +28,12 @@ body {
 	height: 520px;
 }
 
-.choose-lang {
-	position: fixed; 
-	right: 10px; 
-	top: 0px;
+.choose-lang{
+	float:right;
+	margin-bottom:10px;
+}
+.choose-lang .btn-group{
+	float:right;
 }
 
 #map {
@@ -32,4 +43,52 @@ body {
 
 #map_canvas {
     height:300px;
+}
+#description{
+	color:#777;
+	font-size:30px;
+	line-height:30px;
+	text-align:center;
+	font-weight:100;
+}
+#buttons{
+	text-align:center;
+	margin:30px 0;
+}
+#buttons .btn{
+	margin:10px;
+	padding:15px 25px !important;
+}
+#project{
+	padding:20px 0;
+	background-color:#94aec9;
+	color:#fefefe;
+	font-weight:300;
+}
+
+#inversion{
+	padding:20px 0;
+	background-color:#ecebe8;
+	color:#777;
+	font-weight:300;
+}
+
+#progress{
+	padding:20px 0;
+	background-color:#d9ffa9;
+	color:#444;
+	font-weight:300;
+}
+
+#gallery{
+	padding:20px 0;
+	background-color:#ecebe8;
+	color:777;
+	font-weight:300;
+}
+
+.carousel{
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
 }

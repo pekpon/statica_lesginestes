@@ -6,7 +6,7 @@ Tan mateix, també disposarem d’ un Centre de Dia amb capacitat per a 30 perso
 
 Es tractarà d’ un servei d’ asistencia, de control i de vigilància les 24 hores 7 dies a la setmana pels residents i de 8 a 20 i de dilluns a divendres no festius pels no residents.
 
-{{ resource.file0162|thumbnail(360, 250, "img-polaroid") }}
+{{ resource.pic|thumbnail(360, 250, "img-polaroid") }}
 
 Per una bona gestió del Centre, disposarem de dotze gerocultors, un ATS, dos cuineres, dos netejadores, quatre animadors, un fisioterapeuta, un traballador social, un terapeuta ocupacional, un educador social, un psicòleg-loga, un metge i un auxiliar de manteniment.
 
@@ -20,4 +20,4 @@ En els tallers es faran activitats com gimnàstica adaptada a la gent gran, angl
 
 L’ explotació del projecte la durà a terme l’ empresa Residencia Geriàtrica Les Ginestes, S.L.L.
 
-{{ resource.imagen004|thumbnail(360, 250, "img-polaroid") }}
+{{ resource.pic|thumbnail(360, 250, "img-polaroid") }}

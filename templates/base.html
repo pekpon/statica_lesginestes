@@ -11,6 +11,7 @@
   <!-- Le styles -->
   <link href="{{ css.bootstrap }}" rel="stylesheet">
   <link href="{{ css.bootstrap_responsive }}" rel="stylesheet">
+	<link href="{{ css.custom_responsive }}" rel="stylesheet">
   <link href="{{ css.style }}" rel="stylesheet">
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -19,25 +20,34 @@
   <![endif]-->
   <!-- Le fav and touch icons -->
   <link rel="shortcut icon" href="{{ ico.favicon }}">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ ico.apple_touch_icon_144_precomposed }}">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ ico.apple_touch_icon_114_precomposed }}">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ ico.apple_touch_icon_72_precomposed }}">
-  <link rel="apple-touch-icon-precomposed" href="{{ ico.apple_touch_icon_57_precomposed }}">
+	
   {{ builtins.google_analytics }}
   {{ builtins.google_maps }}
 </head>
 <body onload="initialize()">
-<div class="btn-toolbar choose-lang">
-  <div class="btn-group">
-    <button class="btn btn-mini btn-success">Idioma</button>
-    <button class="btn btn-mini dropdown-toggle btn-success" data-toggle="dropdown"><span class="caret"></span></button>
-	{% include "lang.html" %}
-  </div><!-- /btn-group -->
-</div><!-- /btn-toolbar -->
 
-<div class="container">
+
+<div id="top" class="container">
+	<div style="float:left">
+		<div class="btn-group nav">
+			<a href="#project" class="btn btn-nav">Proyecto</a>
+			<a href="#inversion" class="btn btn-nav">Inversión</a>
+			<a href="#progress" class="btn btn-nav">Progreso</a>
+			<a href="#gallery" class="btn btn-nav">Galería</a>
+		</div>
+	</div>
+	<div class="choose-lang">
+	  <div class="btn-group">
+	    <button class="btn dropdown-toggle btn-success" data-toggle="dropdown">
+				Idioma <span class="caret"></span>
+			</button>
+		{% include "lang.html" %}
+	  </div><!-- /btn-group -->
+	</div><!-- /btn-toolbar -->
+	
 {% block content %}{% endblock content %}
 
+<div class="container">
 <footer>
   <p>{{ page.footer_text }}</p>
 </footer>
@@ -47,8 +57,14 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="{{ js.jquery }}"></script>
 <script src="{{ js.bootstrap_min }}"></script>
+<script src="{{ js.scroll }}"></script>
 <script type="text/javascript">
   $('.carousel').carousel()
+	$(document).ready(function() {
+		$('.nav a').smoothScroll({speed: 700});
+		$('.top').smoothScroll({speed: 700 , offset: -50});
+		
+	});
 </script>
 </body>
 </html>
